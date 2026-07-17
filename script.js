@@ -81,3 +81,42 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// 1. Initialize EmailJS with your Public Key
+(function () {
+  // Replace 'YOUR_PUBLIC_KEY' with the key from your EmailJS Account Dashboard
+  emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+// 2. Handle Form Submission
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const btn = document.getElementById("submit-btn");
+    const originalText = btn.innerHTML;
+
+    // Visual feedback for user (loading state)
+    btn.disabled = true;
+    btn.innerHTML =
+      '<i class="fa-solid fa-spinner fa-spin"></i> Dispatching...';
+
+    // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with yours from EmailJS
+    emailjs
+      .sendForm("service_nn9c2nm", "template_iuittjn", this)
+      .then(
+        function () {
+          alert("Message dispatched and sent successfully!");
+          document.getElementById("contact-form").reset(); 
+        },
+        function (error) {
+          alert("Failed to send message. Error: " + JSON.stringify(error));
+        },
+      )
+      .finally(function () {
+        // Restore button state
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+      });
+  });

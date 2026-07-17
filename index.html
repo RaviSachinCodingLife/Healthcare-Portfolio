@@ -28,72 +28,124 @@
       rel="stylesheet"
     />
     <!--Css-->
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navigation Header -->
-    <nav>
-      <div class="container nav-container">
-        <a href="#" class="logo"
-          ><i class="fa-solid fa-house-medical"></i> Dr. Shalini Sharma</a
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+          <i class="fa-solid fa-house-medical"></i>
+          <span>Dr. Shalini Sharma</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        <i class="fa-solid fa-bars menu-btn" id="menuBtn"></i>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#initiatives">Initiatives</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+          <i class="fa-solid fa-bars menu-btn" id="menuBtn"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2" id="navLinks">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#initiatives" class="nav-link">Initiatives</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- Hero Showcase Section -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="hero-tagline">
-            Transforming Healthcare Through Quality & Compliance
-          </p>
-          <h1>Dr. Shalini Sharma</h1>
-          <div class="typewriter-box">
-            <span class="typewriter" id="typewriter"></span>
-          </div>
-          <p class="hero-desc">
-            Healthcare Management Professional with a clinical foundation in
-            Dentistry (BDS) and an MBA in Hospital Administration. Specializing
-            in QA metrics, patient safety protocols, and operational workflows.
-          </p>
-          <div class="cta-group">
-            <a href="#contact" class="btn btn-primary"
-              ><i class="fa-solid fa-envelope"></i> Contact Me</a
+    <section id="home" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <p class="hero-tagline">
+              Transforming Healthcare Through Quality & Compliance
+            </p>
+            <h1>Dr. Shalini Sharma</h1>
+            <div
+              class="typewriter-box d-flex justify-content-center justify-content-lg-start"
             >
-            <a
-              href="#"
-              class="btn btn-secondary"
-              onclick="alert('Link your resume PDF file path here!')"
-              ><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a
-            >
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="medical-art">
-            <i class="fa-solid fa-user-doctor main-icon"></i>
-            <div class="floating-badge badge-1">
-              <i
-                class="fa-solid fa-shield-halved"
-                style="color: var(--accent)"
-              ></i>
-              <span>NABH & ISO Audits</span>
+              <span class="typewriter" id="typewriter"></span>
             </div>
-            <div class="floating-badge badge-2">
-              <i
-                class="fa-solid fa-chart-line"
-                style="color: var(--secondary)"
-              ></i>
-              <span>Healthcare Analytics</span>
+            <p
+              class="hero-desc mx-auto mx-lg-0 card-text"
+              style="max-width: 620px"
+            >
+              Healthcare Management Professional with a clinical foundation in
+              Dentistry (BDS) and an MBA in Hospital Administration.
+              Specializing in QA metrics, patient safety protocols, and
+              operational workflows.
+            </p>
+            <div
+              class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start"
+            >
+              <a href="#contact" class="btn btn-apple btn-apple-primary"
+                ><i class="fa-solid fa-envelope"></i> Contact Me</a
+              >
+              <a
+                href="#"
+                class="btn btn-apple btn-apple-secondary"
+                onclick="alert('Link your resume PDF file path here!')"
+                ><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center">
+            <div class="hero-visual">
+              <div class="medical-art">
+                <img
+                  src="assets/profilePic.PNG"
+                  alt="Dr. Shalini Sharma"
+                  class="w-100 h-100 object-fit-cover"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50%;
+                  "
+                />
+                <div class="floating-badge badge-1">
+                  <i
+                    class="fa-solid fa-shield-halved"
+                    style="color: var(--accent)"
+                  ></i>
+                  <span>NABH & ISO Audits</span>
+                </div>
+                <div class="floating-badge badge-2">
+                  <i
+                    class="fa-solid fa-chart-line"
+                    style="color: var(--secondary)"
+                  ></i>
+                  <span>Healthcare Analytics</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -101,107 +153,244 @@
     </section>
 
     <!-- Profile Overview Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-box">
-          <div class="about-text">
-            <p>
-              I am a Healthcare Management Professional with a Bachelor of
-              Dental Surgery (BDS) and an MBA in Hospital Administration,
-              passionate about driving structural quality assurance, modern
-              workflow updates, and patient protection paradigms.
-            </p>
-            <p>
-              Currently executing structural internal quality updates as a
-              Quality Assurance Professional at CIMS Hospital, my domain spans
-              managing regular NABH accreditation audits, systemizing clinical
-              pathways, mapping root-cause error analytics, and establishing
-              standard infection control policies.
-            </p>
-            <p>
-              My cross-functional framework bridges active clinical execution
-              expertise with structural healthcare management processes. I am
-              actively looking forward to connecting with progressive
-              organizations across Healthcare IT, Clinical Informatics,
-              Healthcare Operations, and HealthTech Consulting ecosystems.
-            </p>
+    <section id="about" class="py-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h2
+              class="text-uppercase fs-6 fw-bold tracking-wider mb-5"
+              style="color: var(--secondary); letter-spacing: 0.15em"
+            >
+              About Me
+            </h2>
+            <div
+              class="about-box p-4 p-md-5 rounded-4 border"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                border-color: var(--glass-border) !important;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <div class="about-text row gy-4">
+                <div class="col-lg-12">
+                  <p
+                    class="fs-4 fw-light tracking-tight lh-base mb-4"
+                    style="color: var(--text-main)"
+                  >
+                    I am a Healthcare Management Professional with a Bachelor of
+                    Dental Surgery (BDS) and an MBA in Hospital Administration,
+                    passionate about driving structural quality assurance,
+                    modern workflow updates, and patient protection paradigms.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p class="fs-6 lh-lg mb-0" style="color: var(--text-muted)">
+                    Currently executing structural internal quality updates as a
+                    Quality Assurance Professional at CIMS Hospital, my domain
+                    spans managing regular NABH accreditation audits,
+                    systemizing clinical pathways, mapping root-cause error
+                    analytics, and establishing standard infection control
+                    policies.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p class="fs-6 lh-lg mb-0" style="color: var(--text-muted)">
+                    My cross-functional framework bridges active clinical
+                    execution expertise with structural healthcare management
+                    processes. I am actively looking forward to connecting with
+                    progressive organizations across Healthcare IT, Clinical
+                    Informatics, Healthcare Operations, and HealthTech
+                    Consulting ecosystems.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Professional Timeline Section -->
-    <section id="experience">
-      <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <div class="timeline-date">2025 – Present</div>
-              <h3>Quality Assurance Professional</h3>
-              <h4>CIMS Hospital, Bhopal</h4>
-              <ul>
-                <li>
-                  Led cross-functional internal quality baseline audits ensuring
-                  operational preparedness for NABH & ISO compliance
-                  assessments.
+    <section id="experience" class="py-5">
+      <div class="container py-4">
+        <h2
+          class="text-uppercase fs-6 fw-bold tracking-wider mb-5"
+          style="color: var(--secondary); letter-spacing: 0.15em"
+        >
+          Professional Experience
+        </h2>
+        <div class="timeline position-relative">
+          <div class="timeline-item left mb-5">
+            <div class="timeline-content p-4 rounded-4 shadow-sm">
+              <div
+                class="timeline-date badge rounded-pill px-3 py-2 mb-3"
+                style="
+                  background: rgba(15, 76, 129, 0.2);
+                  color: var(--secondary);
+                  border: 1px solid rgba(20, 184, 166, 0.3);
+                "
+              >
+                2025 – Present
+              </div>
+              <h3 class="fs-4 fw-semibold tracking-tight mb-1 text-white">
+                Quality Assurance Professional
+              </h3>
+              <h4 class="fs-6 fw-medium mb-3" style="color: var(--secondary)">
+                CIMS Hospital, Bhopal
+              </h4>
+              <ul
+                class="list-unstyled d-flex flex-column gap-2 mb-0 text-muted"
+                style="font-size: 0.95rem"
+              >
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Led cross-functional internal quality baseline audits
+                    ensuring operational preparedness for NABH & ISO compliance
+                    assessments.</span
+                  >
                 </li>
-                <li>
-                  Applied structured Root Cause Analysis (RCA) models to
-                  outpatient bottlenecks, generating a 30% metric reduction in
-                  turnaround exceptions.
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Applied structured Root Cause Analysis (RCA) models to
+                    outpatient bottlenecks, generating a 30% metric reduction in
+                    turnaround exceptions.</span
+                  >
                 </li>
-                <li>
-                  Engineered localized Infection Control Standard Operating
-                  Procedures (SOPs), accelerating hand hygiene protocol tracking
-                  metrics from 70% to 85%.
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Engineered localized Infection Control Standard Operating
+                    Procedures (SOPs), accelerating hand hygiene protocol
+                    tracking metrics from 70% to 85%.</span
+                  >
                 </li>
-                <li>
-                  Maintained administrative databases alongside key clinical
-                  department heads to secure persistent compliance metrics.
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Maintained administrative databases alongside key clinical
+                    department heads to secure persistent compliance
+                    metrics.</span
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="timeline-item right">
-            <div class="timeline-content">
-              <div class="timeline-date">2024</div>
-              <h3>Hospital Administration Intern</h3>
-              <h4>Max Hospital</h4>
-              <ul>
-                <li>
-                  Supported structural daily hospital dashboard data flows,
-                  clinical process mapping updates, and multidisciplinary care
-                  alignment frameworks.
+          <div class="timeline-item right mb-5">
+            <div class="timeline-content p-4 rounded-4 shadow-sm">
+              <div
+                class="timeline-date badge rounded-pill px-3 py-2 mb-3"
+                style="
+                  background: rgba(15, 76, 129, 0.2);
+                  color: var(--secondary);
+                  border: 1px solid rgba(20, 184, 166, 0.3);
+                "
+              >
+                2024
+              </div>
+              <h3 class="fs-4 fw-semibold tracking-tight mb-1 text-white">
+                Hospital Administration Intern
+              </h3>
+              <h4 class="fs-6 fw-medium mb-3" style="color: var(--secondary)">
+                Max Hospital
+              </h4>
+              <ul
+                class="list-unstyled d-flex flex-column gap-2 mb-0 text-muted"
+                style="font-size: 0.95rem"
+              >
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Supported structural daily hospital dashboard data flows,
+                    clinical process mapping updates, and multidisciplinary care
+                    alignment frameworks.</span
+                  >
                 </li>
-                <li>
-                  Built departmental asset tracking updates and verified
-                  regulatory healthcare documentation templates.
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Built departmental asset tracking updates and verified
+                    regulatory healthcare documentation templates.</span
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <div class="timeline-date">2021 – 2023</div>
-              <h3>Dental Surgeon</h3>
-              <h4>RKDF Dental College & Shine Dental Clinic</h4>
-              <ul>
-                <li>
-                  Managed complex patient presentation profiles utilizing
-                  evidence-based treatment strategies and modern dental tracking
-                  technologies.
+          <div class="timeline-item left mb-0">
+            <div class="timeline-content p-4 rounded-4 shadow-sm">
+              <div
+                class="timeline-date badge rounded-pill px-3 py-2 mb-3"
+                style="
+                  background: rgba(15, 76, 129, 0.2);
+                  color: var(--secondary);
+                  border: 1px solid rgba(20, 184, 166, 0.3);
+                "
+              >
+                2021 – 2023
+              </div>
+              <h3 class="fs-4 fw-semibold tracking-tight mb-1 text-white">
+                Dental Surgeon
+              </h3>
+              <h4 class="fs-6 fw-medium mb-3" style="color: var(--secondary)">
+                RKDF Dental College & Shine Dental Clinic
+              </h4>
+              <ul
+                class="list-unstyled d-flex flex-column gap-2 mb-0 text-muted"
+                style="font-size: 0.95rem"
+              >
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Managed complex patient presentation profiles utilizing
+                    evidence-based treatment strategies and modern dental
+                    tracking technologies.</span
+                  >
                 </li>
-                <li>
-                  Coordinated preventive health campaigns and optimized
-                  diagnostic documentation records.
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Coordinated preventive health campaigns and optimized
+                    diagnostic documentation records.</span
+                  >
                 </li>
-                <li>
-                  Mentored junior clinical interns through core diagnostic
-                  workflows and clean procedural methodologies.
+                <li class="d-flex align-items-start gap-2">
+                  <i
+                    class="fa-solid fa-circle text-primary fs-8 mt-2"
+                    style="transform: scale(0.4)"
+                  ></i
+                  ><span
+                    >Mentored junior clinical interns through core diagnostic
+                    workflows and clean procedural methodologies.</span
+                  >
                 </li>
               </ul>
             </div>
@@ -211,42 +400,206 @@
     </section>
 
     <!-- Technical & Operational Skills Section -->
-    <section id="skills">
-      <div class="container">
-        <h2 class="section-title">Core Competencies</h2>
-        <div class="skills-grid">
-          <div class="skills-category">
-            <h3>
-              <i class="fa-solid fa-briefcase-medical"></i> Clinical &
-              Operations Management
-            </h3>
-            <div class="tags-container">
-              <span class="skill-tag">Hospital Administration</span>
-              <span class="skill-tag">NABH Accreditation Standards</span>
-              <span class="skill-tag">ISO Compliance Tracking</span>
-              <span class="skill-tag">Root Cause Analysis (RCA)</span>
-              <span class="skill-tag">Infection Control Protocols</span>
-              <span class="skill-tag">Clinical Workflow Optimization</span>
-              <span class="skill-tag">SOP Architecture</span>
-              <span class="skill-tag">Patient Safety Frameworks</span>
+    <section id="skills" class="py-5">
+      <div class="container py-4">
+        <h2
+          class="text-uppercase fs-6 fw-bold tracking-wider mb-5"
+          style="color: var(--secondary); letter-spacing: 0.15em"
+        >
+          Core Competencies
+        </h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div
+              class="skills-category p-4 p-md-5 h-100 rounded-4 border shadow-sm"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-color: var(--glass-border) !important;
+              "
+            >
+              <h3
+                class="fs-5 fw-semibold d-flex align-items-center gap-3 mb-4"
+                style="color: var(--secondary)"
+              >
+                <i class="fa-solid fa-briefcase-medical"></i>
+                Clinical & Operations Management
+              </h3>
+              <div class="tags-container d-flex flex-wrap gap-2">
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Hospital Administration</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >NABH Accreditation Standards</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >ISO Compliance Tracking</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Root Cause Analysis (RCA)</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Infection Control Protocols</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Clinical Workflow Optimization</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >SOP Architecture</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Patient Safety Frameworks</span
+                >
+              </div>
             </div>
           </div>
 
-          <div class="skills-category">
-            <h3>
-              <i class="fa-solid fa-laptop-medical"></i> Healthcare IT &
-              Analytics Tools
-            </h3>
-            <div class="tags-container">
-              <span class="skill-tag">Electronic Health Records (EHR)</span>
-              <span class="skill-tag">Hospital Information Systems (HIS)</span>
-              <span class="skill-tag">Clinical Informatics</span>
-              <span class="skill-tag">Advanced Microsoft Excel</span>
-              <span class="skill-tag">Healthcare Data Reporting</span>
-              <span class="skill-tag"
-                >Cross-functional Technical Alignment</span
+          <div class="col-lg-6">
+            <div
+              class="skills-category p-4 p-md-5 h-100 rounded-4 border shadow-sm"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-color: var(--glass-border) !important;
+              "
+            >
+              <h3
+                class="fs-5 fw-semibold d-flex align-items-center gap-3 mb-4"
+                style="color: var(--secondary)"
               >
-              <span class="skill-tag">MS PowerPoint & Word</span>
+                <i class="fa-solid fa-laptop-medical"></i>
+                Healthcare IT & Analytics Tools
+              </h3>
+              <div class="tags-container d-flex flex-wrap gap-2">
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Electronic Health Records (EHR)</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Hospital Information Systems (HIS)</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Clinical Informatics</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Advanced Microsoft Excel</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Healthcare Data Reporting</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >Cross-functional Technical Alignment</span
+                >
+                <span
+                  class="skill-tag px-3 py-2 rounded-pill fs-7 border"
+                  style="
+                    background: rgba(255, 255, 255, 0.02);
+                    border-color: var(--glass-border) !important;
+                    color: var(--text-main);
+                    transition: var(--transition);
+                  "
+                  >MS PowerPoint & Word</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -254,191 +607,543 @@
     </section>
 
     <!-- Operational Projects & Case Studies Section -->
-    <section id="initiatives">
-      <div class="container">
-        <h2 class="section-title">Key Quality Initiatives</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <i class="fa-solid fa-clock-rotate-left project-icon"></i>
-            <h3>Patient Waiting Time Strategy</h3>
-            <p>
-              Designed structured Ishikawa diagrams and process charts via Root
-              Cause Analysis to isolate patient onboarding friction points,
-              lowering repeat system tracking issues by 30%.
-            </p>
+    <section id="initiatives" class="py-5">
+      <div class="container py-4">
+        <h2
+          class="text-uppercase fs-6 fw-bold tracking-wider mb-5"
+          style="color: var(--secondary); letter-spacing: 0.15em"
+        >
+          Key Quality Initiatives
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="project-card p-4 h-100 rounded-4 border d-flex flex-column"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-color: var(--glass-border) !important;
+                transition: var(--transition);
+              "
+            >
+              <span
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 20px;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-clock-rotate-left project-icon fs-3 mb-4"
+                  style="color: var(--secondary)"
+                ></i>
+                <h3 class="fs-5 fw-semibold mb-2">
+                  Patient Waiting Time Strategy
+                </h3>
+              </span>
+              <p
+                class="fs-7 lh-lg mb-0 flex-grow-1 pt-2"
+                style="color: var(--text-muted)"
+              >
+                Designed structured Ishikawa diagrams and process charts via
+                Root Cause Analysis to isolate patient onboarding friction
+                points, lowering repeat system tracking issues by 30%.
+              </p>
+            </div>
           </div>
 
-          <div class="project-card">
-            <i class="fa-solid fa-hand-holding-droplet project-icon"></i>
-            <h3>Infection Control Optimization</h3>
-            <p>
-              Re-engineered operational sanitization and monitoring steps across
-              multiple hospital departments, verifying an explicit leap in hand
-              hygiene metrics to 85% compliance.
-            </p>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="project-card p-4 h-100 rounded-4 border d-flex flex-column"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-color: var(--glass-border) !important;
+                transition: var(--transition);
+              "
+            >
+              <span
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 20px;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-hand-holding-droplet project-icon fs-3 mb-4"
+                  style="color: var(--secondary)"
+                ></i>
+                <h3 class="fs-5 fw-semibold mb-2">
+                  Infection Control Optimization
+                </h3>
+              </span>
+              <p
+                class="fs-7 lh-lg mb-0 flex-grow-1 pt-2"
+                style="color: var(--text-muted)"
+              >
+                Re-engineered operational sanitization and monitoring steps
+                across multiple hospital departments, verifying an explicit leap
+                in hand hygiene metrics to 85% compliance.
+              </p>
+            </div>
           </div>
 
-          <div class="project-card">
-            <i class="fa-solid fa-clipboard-check project-icon"></i>
-            <h3>Accreditation Readiness Mapping</h3>
-            <p>
-              Coordinated mock validation reviews, standard documentation
-              frameworks, and metric updates to confirm ongoing structural
-              readiness parameters for NABH institutional reviews.
-            </p>
+          <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <div
+              class="project-card p-4 h-100 rounded-4 border d-flex flex-column"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-color: var(--glass-border) !important;
+                transition: var(--transition);
+              "
+            >
+              <span
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 20px;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-clipboard-check project-icon fs-3 mb-4"
+                  style="color: var(--secondary)"
+                ></i>
+                <h3 class="fs-5 fw-semibold mb-2">
+                  Accreditation Readiness Mapping
+                </h3>
+              </span>
+              <p
+                class="fs-7 lh-lg mb-0 flex-grow-1 pt-2"
+                style="color: var(--text-muted)"
+              >
+                Coordinated mock validation reviews, standard documentation
+                frameworks, and metric updates to confirm ongoing structural
+                readiness parameters for NABH institutional reviews.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Academic and Professional Credentials Section -->
-    <section id="education">
-      <div class="container edu-cert-grid">
-        <div>
-          <h2 class="section-title">Education</h2>
+    <section id="education" class="py-5">
+      <div class="container py-4">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h2
+              class="text-uppercase fs-6 fw-bold tracking-wider mb-5"
+              style="color: var(--secondary); letter-spacing: 0.15em"
+            >
+              Education
+            </h2>
+            <div class="d-flex flex-column gap-4">
+              <div
+                class="edu-card p-4 rounded-4 border shadow-sm"
+                style="
+                  background: var(--glass-bg);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  border-color: var(--glass-border) !important;
+                "
+              >
+                <div
+                  class="edu-header d-flex justify-content-between align-items-start mb-2 flex-wrap gap-2"
+                >
+                  <span
+                    class="edu-title fs-5 fw-semibold tracking-tight text-white"
+                    >MBA – Hospital Administration</span
+                  >
+                  <span
+                    class="edu-meta badge rounded-pill px-3 py-1 fs-8"
+                    style="
+                      background: rgba(34, 197, 94, 0.15);
+                      color: var(--accent);
+                    "
+                    >2023 – 2025</span
+                  >
+                </div>
+                <div class="edu-inst fs-6 fw-medium mb-2">
+                  People’s University, Bhopal
+                </div>
+                <div class="edu-grade fs-7">
+                  Academic Performance:
+                  <strong style="color: text-white">CGPA 8.3 / 10</strong>
+                </div>
+              </div>
 
-          <div class="edu-card">
-            <div class="edu-header">
-              <span class="edu-title">MBA – Hospital Administration</span>
-              <span class="edu-meta">2023 – 2025</span>
-            </div>
-            <div class="edu-inst">People’s University, Bhopal</div>
-            <div class="edu-grade">
-              Academic Performance: <strong>CGPA 8.3 / 10</strong>
+              <div
+                class="edu-card p-4 rounded-4 border shadow-sm"
+                style="
+                  background: var(--glass-bg);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  border-color: var(--glass-border) !important;
+                "
+              >
+                <div
+                  class="edu-header d-flex justify-content-between align-items-start mb-2 flex-wrap gap-2"
+                >
+                  <span
+                    class="edu-title fs-5 fw-semibold tracking-tight text-white"
+                    >Bachelor of Dental Surgery (BDS)</span
+                  >
+                  <span
+                    class="edu-meta badge rounded-pill px-3 py-1 fs-8"
+                    style="
+                      background: rgba(34, 197, 94, 0.15);
+                      color: var(--accent);
+                    "
+                    >2017 – 2022</span
+                  >
+                </div>
+                <div class="edu-inst fs-6 fw-medium mb-2">
+                  RKDF Dental College & Research Centre
+                </div>
+                <div class="edu-grade fs-7">
+                  Cumulative Metrics:
+                  <strong style="color: text-white">69% Aggregate</strong>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="edu-card">
-            <div class="edu-header">
-              <span class="edu-title">Bachelor of Dental Surgery (BDS)</span>
-              <span class="edu-meta">2017 – 2022</span>
-            </div>
-            <div class="edu-inst">RKDF Dental College & Research Centre</div>
-            <div class="edu-grade">
-              Cumulative Metrics: <strong>69% Aggregate</strong>
-            </div>
-          </div>
-        </div>
+          <div class="col-lg-5">
+            <h2
+              class="text-uppercase fs-6 fw-bold tracking-wider mb-5"
+              style="color: var(--secondary); letter-spacing: 0.15em"
+            >
+              Certifications
+            </h2>
+            <ul class="cert-list list-unstyled d-flex flex-column gap-3 mb-0">
+              <li
+                class="cert-item p-3 rounded-4 border d-flex align-items-center gap-3"
+                style="
+                  background: var(--glass-bg);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  border-color: var(--glass-border) !important;
+                "
+              >
+                <i
+                  class="fa-solid fa-circle-check fs-5"
+                  style="color: var(--accent)"
+                ></i>
+                <span class="fs-6 fw-medium text-white"
+                  >NABH Implementation Training Frameworks</span
+                >
+              </li>
 
-        <div>
-          <h2 class="section-title">Certifications</h2>
-          <ul class="cert-list">
-            <li class="cert-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>NABH Implementation Training Frameworks</span>
-            </li>
-            <li class="cert-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Professional Healthcare Quality Management Techniques</span>
-            </li>
-            <li class="cert-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Advanced Professional Data Analytics & MS Excel</span>
-            </li>
-            <li class="cert-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Basic Life Support (BLS) Clinical Accreditation</span>
-            </li>
-          </ul>
+              <li
+                class="cert-item p-3 rounded-4 border d-flex align-items-center gap-3"
+                style="
+                  background: var(--glass-bg);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  border-color: var(--glass-border) !important;
+                "
+              >
+                <i
+                  class="fa-solid fa-circle-check fs-5"
+                  style="color: var(--accent)"
+                ></i>
+                <span class="fs-6 fw-medium text-white"
+                  >Professional Healthcare Quality Management Techniques</span
+                >
+              </li>
+
+              <li
+                class="cert-item p-3 rounded-4 border d-flex align-items-center gap-3"
+                style="
+                  background: var(--glass-bg);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  border-color: var(--glass-border) !important;
+                "
+              >
+                <i
+                  class="fa-solid fa-circle-check fs-5"
+                  style="color: var(--accent)"
+                ></i>
+                <span class="fs-6 fw-medium text-white"
+                  >Advanced Professional Data Analytics & MS Excel</span
+                >
+              </li>
+
+              <li
+                class="cert-item p-3 rounded-4 border d-flex align-items-center gap-3"
+                style="
+                  background: var(--glass-bg);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  border-color: var(--glass-border) !important;
+                "
+              >
+                <i
+                  class="fa-solid fa-circle-check fs-5"
+                  style="color: var(--accent)"
+                ></i>
+                <span class="fs-6 fw-medium text-white"
+                  >Basic Life Support (BLS) Clinical Accreditation</span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Integration Section -->
-    <section id="contact">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <h2 class="section-title">Get In Touch</h2>
-          <p>
-            Looking for a precise, clinically-trained Quality Management
-            Professional or Healthcare IT Analyst to step into your operational
-            matrix? Let's connect.
-          </p>
+    <section id="contact" class="py-5">
+      <div class="container py-4">
+        <div class="row g-5">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="contact-info">
+              <h2
+                class="text-uppercase fs-6 fw-bold tracking-wider mb-4"
+                style="color: var(--secondary); letter-spacing: 0.15em"
+              >
+                Get In Touch
+              </h2>
+              <p
+                class="fs-5 fw-light lh-base mb-5"
+                style="color: var(--text-muted)"
+              >
+                Looking for a precise, clinically-trained Quality Management
+                Professional or Healthcare IT Analyst to step into your
+                operational matrix? Let's connect.
+              </p>
 
-          <div class="info-details">
-            <div class="info-item">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <h4>Email Address</h4>
-                <a href="mailto:realshalini893@gmail.com"
-                  >realshalini893@gmail.com</a
-                >
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <h4>Contact Number</h4>
-                <a href="tel:+919968813606">+91-9968813606</a>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <h4>Primary Base</h4>
-                <span>Pune, Maharashtra, India</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="fa-brands fa-linkedin"></i>
-              <div>
-                <h4>Professional Network</h4>
-                <a href="#" target="_blank">linkedin.com/in/shalini-sharma</a>
+              <div class="info-details d-flex flex-column gap-4">
+                <div class="info-item d-flex align-items-center gap-3">
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center border"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: rgba(255, 255, 255, 0.03);
+                      border-color: var(--glass-border) !important;
+                    "
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-uppercase tracking-wider mb-1"
+                      style="font-size: 0.75rem; color: var(--text-muted)"
+                    >
+                      Email Address
+                    </h4>
+                    <a
+                      href="mailto:realshalini893@gmail.com"
+                      class="text-decoration-none fw-medium fs-6"
+                      style="color: var(--text-main)"
+                      >Email</a
+                    >
+                  </div>
+                </div>
+
+                <div class="info-item d-flex align-items-center gap-3">
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center border"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: rgba(255, 255, 255, 0.03);
+                      border-color: var(--glass-border) !important;
+                    "
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-uppercase tracking-wider mb-1"
+                      style="font-size: 0.75rem; color: var(--text-muted)"
+                    >
+                      Contact Number
+                    </h4>
+                    <a
+                      href="tel:+919968813606"
+                      class="text-decoration-none fw-medium fs-6"
+                      style="color: var(--text-main)"
+                      >Call</a
+                    >
+                  </div>
+                </div>
+
+                <div class="info-item d-flex align-items-center gap-3">
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center border"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: rgba(255, 255, 255, 0.03);
+                      border-color: var(--glass-border) !important;
+                    "
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-uppercase tracking-wider mb-1"
+                      style="font-size: 0.75rem; color: var(--text-muted)"
+                    >
+                      Primary Base
+                    </h4>
+                    <span class="fw-medium fs-6" style="color: var(--text-main)"
+                      >Pune, Maharashtra, India</span
+                    >
+                  </div>
+                </div>
+
+                <div class="info-item d-flex align-items-center gap-3">
+                  <div
+                    class="rounded-circle d-flex align-items-center justify-content-center border"
+                    style="
+                      width: 50px;
+                      height: 50px;
+                      background: rgba(255, 255, 255, 0.03);
+                      border-color: var(--glass-border) !important;
+                    "
+                  >
+                    <i
+                      class="fa-brands fa-linkedin"
+                      style="color: var(--secondary)"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-uppercase tracking-wider mb-1"
+                      style="font-size: 0.75rem; color: var(--text-muted)"
+                    >
+                      Professional Network
+                    </h4>
+                    <a
+                      href="https://www.linkedin.com/in/dr-shalini-sharma-765646420/"
+                      target="_blank"
+                      class="text-decoration-none fw-medium fs-6"
+                      style="color: var(--text-main)"
+                      >Linkedin</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="contact-form">
-          <form
-            onsubmit="
-              event.preventDefault();
-              alert('Message sent successfully!');
-            "
-          >
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" required placeholder="John Doe" />
-            </div>
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input
-                type="email"
-                id="email"
-                required
-                placeholder="john@example.com"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                rows="5"
-                required
-                placeholder="Hi Dr. Shalini, let's discuss a role at our hospital..."
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="btn btn-primary style='width:100%; justify-content:center;'"
+          <div class="col-lg-6">
+            <div
+              class="contact-form p-4 p-md-5 rounded-4 border shadow"
+              style="
+                background: var(--glass-bg);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                border-color: var(--glass-border) !important;
+              "
             >
-              <i class="fa-solid fa-paper-plane"></i> Dispatch Message
-            </button>
-          </form>
+              <form id="contact-form">
+                <div class="form-group mb-4">
+                  <label for="name" class="form-label fs-7 fw-medium mb-2"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="from_name"
+                    class="form-control rounded-3 border px-3 py-2 fs-6"
+                    required
+                    placeholder="Sachin Saurabh"
+                    style="
+                      background: rgba(6, 13, 25, 0.5);
+                      border-color: var(--glass-border) !important;
+                      color: white !important;
+                    "
+                  />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label
+                    for="email"
+                    class="form-label fs-7 fw-medium mb-2"
+                    style="color: var(--text-muted)"
+                    >Your Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="reply_to"
+                    class="form-control rounded-3 border px-3 py-2 fs-6"
+                    required
+                    placeholder="sachin@example.com"
+                    style="
+                      background: rgba(6, 13, 25, 0.5);
+                      border-color: var(--glass-border) !important;
+                      color: white;
+                    "
+                  />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label
+                    for="message"
+                    class="form-label fs-7 fw-medium mb-2"
+                    style="color: var(--text-muted)"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control rounded-3 border px-3 py-2 fs-6"
+                    rows="5"
+                    required
+                    placeholder="Hi Dr. Shalini, let's discuss a role at our hospital..."
+                    style="
+                      background: rgba(6, 13, 25, 0.5);
+                      border-color: var(--glass-border) !important;
+                      color: white;
+                      resize: none;
+                    "
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="btn btn-apple btn-apple-primary w-100 justify-content-center py-2.5 rounded-3"
+                >
+                  <i class="fa-solid fa-paper-plane"></i> Dispatch Message
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Structural Copyright Footer -->
-    <footer>
-      <div class="container">
-        <p>
+    <footer class="py-4 mt-5" style="border-top: 1px solid var(--glass-border)">
+      <div class="container text-center">
+        <p class="fs-7 mb-0" style="color: var(--text-muted)">
           &copy; 2026 Dr. Shalini Sharma. All Rights Reserved. Designed for
           Healthcare Operations & Innovation.
         </p>
       </div>
     </footer>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
